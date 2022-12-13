@@ -1,6 +1,7 @@
 :root{
     --secondaryColorOne:#D06550;
     --secondaryColorTwo:#DEB48E;
+    --secondaryColorTwoTransparent:#deb38e54;
     --primaryColorOne:#D27C1F;
     --primaryColorTwo:#D88E35;
     --textColorOne:#FCEED8;
@@ -14,8 +15,63 @@
 }
 body{
   background: linear-gradient(to right, var(--secondaryColorOne),var(--primaryColorOne) );
+  display: flex;
+  justify-content: center;
  
+}
+.wrapper{
+  transform: translate(0,10%);
+  width: 80vw;
+  height: 85vh;
+  background-color:var(--secondaryColorTwoTransparent) ;
+  border-radius: 30px;
+  padding: 5px;
+  border: 4px solid var(--secondaryColorTwo);
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.719) ;
   
-  
+}
+header{
+  /* border: 3px solid green; */
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+
+}
+#circle{
+  width: 15px;
+  height:15px;
+  background-color:var(--secondaryColorTwo);
+  border-radius: 50%;
+justify-self: center;
+}
+
+#rectangle{
+  width: 50px;
+  height:8px;
+  background-color: var(--secondaryColorTwo);
+  border-radius: 20px;
+  justify-self: center;
+
+}
+
+.screen{
+  margin: 10px;
+  height: 65vh;
+  background-color: inherit;
+}
+
+#button{
+  justify-self: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color:var(--secondaryColorTwo);
+  border: 3px solid var(--secondaryColorOne);
+
+}
+#button:focus{
+  border: 3px solid var(--secondaryColorOne);
 
 }
