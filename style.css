@@ -58,8 +58,12 @@ justify-self: center;
 
 .screen{
   margin: 10px;
+  padding:20px;
   height: 65vh;
   background-color: inherit;
+  display: grid;
+  grid-template-columns: 1fr;
+  
 }
 
 #button{
@@ -74,4 +78,17 @@ justify-self: center;
 #button:focus{
   border: 3px solid var(--secondaryColorOne);
 
+}
+
+#search{
+justify-self: center;
+ width: 100%;
+ height: 30px;
+ padding:10px;
+ font-size: 1.2rem;
+ font-weight: bold;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color:rgba(255, 255, 255, 0.436);
 }
