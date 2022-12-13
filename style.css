@@ -1,0 +1,21 @@
+:root{
+    --secondaryColorOne:#D06550;
+    --secondaryColorTwo:#DEB48E;
+    --primaryColorOne:#D27C1F;
+    --primaryColorTwo:#D88E35;
+    --textColorOne:#FCEED8;
+    --textColorTwo:#D7CBB2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+  background: linear-gradient(to right, var(--secondaryColorOne),var(--primaryColorOne) );
+ 
+  
+  
+
+}
