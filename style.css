@@ -1,94 +1,121 @@
-:root{
-    --secondaryColorOne:#D06550;
-    --secondaryColorTwo:#DEB48E;
-    --secondaryColorTwoTransparent:#deb38e54;
-    --primaryColorOne:#D27C1F;
-    --primaryColorTwo:#D88E35;
-    --textColorOne:#FCEED8;
-    --textColorTwo:#D7CBB2;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
 
+:root {
+  --secondaryColorOne: #d06550;
+  --secondaryColorTwo: #deb48e;
+  --secondaryColorTwoTransparent: #deb38e54;
+  --primaryColorOne: #d27c1f;
+  --primaryColorTwo: #d88e35;
+  --textColorOne: #fceed8;
+  --textColorTwo: #d7cbb2;
 }
-body{
-  background: linear-gradient(to right, var(--secondaryColorOne),var(--primaryColorOne) );
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    to right,
+    var(--secondaryColorOne),
+    var(--primaryColorOne)
+  );
   display: flex;
   justify-content: center;
- 
 }
-.wrapper{
-  transform: translate(0,10%);
+.wrapper {
+  transform: translate(0, 10%);
   width: 80vw;
   height: 85vh;
-  background-color:var(--secondaryColorTwoTransparent) ;
+  background-color: var(--secondaryColorTwoTransparent);
   border-radius: 30px;
   padding: 5px;
   border: 4px solid var(--secondaryColorTwo);
   display: grid;
   grid-template-columns: 1fr;
-  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.719) ;
-  
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.719);
 }
-header{
+header {
   /* border: 3px solid green; */
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-
 }
-#circle{
+#circle {
   width: 15px;
-  height:15px;
-  background-color:var(--secondaryColorTwo);
+  height: 15px;
+  background-color: var(--secondaryColorTwo);
   border-radius: 50%;
-justify-self: center;
+  justify-self: center;
 }
 
-#rectangle{
+#rectangle {
   width: 50px;
-  height:8px;
+  height: 8px;
   background-color: var(--secondaryColorTwo);
   border-radius: 20px;
   justify-self: center;
-
 }
 
-.screen{
+.screen {
+  font-family: "Hanalei Fill", cursive;
+
   margin: 10px;
-  padding:20px;
+  padding: 20px;
   height: 65vh;
   background-color: inherit;
-  display: grid;
-  grid-template-columns: 1fr;
-  
+  /* display: grid;
+  grid-template-columns: 1fr; */
 }
 
-#button{
+#button {
   justify-self: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color:var(--secondaryColorTwo);
+  background-color: var(--secondaryColorTwo);
   border: 3px solid var(--secondaryColorOne);
-
 }
-#button:focus{
+#button:focus {
   border: 3px solid var(--secondaryColorOne);
-
 }
 
-#search{
-justify-self: center;
- width: 100%;
- height: 30px;
- padding:10px;
- font-size: 1.2rem;
- font-weight: bold;
-  border-radius: 20px;
+label {
+  display: flex;
+  position: relative;
+
+}
+
+#searchState {
+  /* justify-self: center; */
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px 0 0px 10px;
   outline: none;
   border: none;
-  background-color:rgba(255, 255, 255, 0.436);
+  background-color: rgba(255, 255, 255, 0.436);
+}
+
+#search_btn {
+  background-color: var(--secondaryColorOne);
+  color: var(--textColorOne);
+  cursor: pointer;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 0;  
+  bottom: 0; 
+  right: -10px;
+  padding: 5px;
+  font-weight: bold;
+  
+}
+
+#displayCityName{
+  font-size: 3rem;
+  color: var(--textColorOne);
+  text-align: center;
 }
