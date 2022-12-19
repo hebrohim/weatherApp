@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
 
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Press+Start+2P&display=swap');
 :root {
   --secondaryColorOne: #d06550;
   --secondaryColorTwo: #deb48e;
@@ -58,7 +60,7 @@ header {
 }
 
 .screen {
-  font-family: "Hanalei Fill", cursive;
+  /* font-family: "Hanalei Fill", cursive; */
 
   margin: 10px;
   padding: 20px;
@@ -118,4 +120,15 @@ label {
   font-size: 3rem;
   color: var(--textColorOne);
   text-align: center;
+}
+
+
+#displayCurrentTime{
+  color: var(--secondaryColorOne);
+  text-shadow: 2px 3px black;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 80px;
 }
