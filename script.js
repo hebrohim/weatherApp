@@ -1,8 +1,5 @@
+
 let search_btn = document.getElementById("search_btn");
-let currentDate = new Date(); 
-
-// console.log(currentDate.getHours())
-
 function currentTime(date) {
   var hours = date.getHours();
   var minutes = date.getMinutes();
@@ -13,26 +10,26 @@ function currentTime(date) {
   var strTime = hours + ':' + minutes + ' ' + ampm;
   return strTime;
 }
-
-console.log(currentTime(new Date));
-
 document.getElementById("displayCurrentTime").innerHTML = currentTime(new Date());
 
-function search(){
-let inputState = document.getElementById("searchState").value
-let displayCityName = document.getElementById("displayCityName")
-let key =
-  `https://api.openweathermap.org/data/2.5/weather?q=${inputState}&appid=84a5541e536549f59b50ed907cab345b&units=metric`;
- 
-
-fetch(key)
-.then((res) => res.json())
-.then((data)=>displayCityName.innerHTML= Math.round(data.main.temp) +`&deg;C`)
-.catch((err) =>displayCityName.innerHTML= "err");
-}
-
-
-
-
+  function search(){
+   
+    let inputState = document.getElementById("searchState").value
+    let displayCityName = document.getElementById("displayCityName")
+    let key =
+      `https://api.openweathermap.org/data/2.5/weather?q=${inputState}&appid=84a5541e536549f59b50ed907cab345b&units=metric`;
+      fetch(key)
+      .then((res) => res.json())
+      .then((data)=>{
+        console.log(data)
+        displayCityTemparature.innerHTML= Math.round(data.main.temp) +`&deg;C` 
+        displayCityName.innerHTML = `${data.name},${data.sys.country}`
+      
+      })
+      .catch((err) =>displayCityName.innerHTML= `<p>Enter a valid city name</p>`);
+     
+    
+   
+    }
 
 search_btn.addEventListener("click",search)
