@@ -12,16 +12,19 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 ## Overview
-A testimonial page implemented using css grid
+This is a web application to show a weather forecast using weather API from external services like https://openweathermap.org/.It allows users to be able to search for a specific location by city name and display the weather condotion in celcius.
+
 ### The challenge
 
 Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
+- search weather condition of a specific location
+- search weather condition by city Name
+- see current Time of user's location
+- see weather description 
 
 ### Screenshot
 
-![](./design/screenshot.jpg)
+![](./design/screenShot.jpg)
 
 ### Links
 
@@ -36,26 +39,20 @@ Users should be able to:
 - CSS custom properties
 - CSS flexBox
 - Mobile-first workflow
+- Javascript
+- Api calls
+
 ### What I learned
-
-I learnt how to use grid in css effectively. compare to flexbox, i was able to make changes to my rows and columns at the same time making use of properties like 
--grid area
--grid gap
--grid-template-row
--grid-template-column
-
+I learnt how to effectively call an Api from external resources like https://openweathermap.org/. I also was able to use the fetch and catch method to collect data from an Api and throw back error when there's a problem while retrieving the data
 ### Continued development
-
-i still want to improve more on my mobile-first approach for designing.with the help of grid system in css i was able to design this project with the mobile first technique. I hope to use bootstrsp or tailwind Css for my next project
+I will like to improve on this app by allowing it to auto generate the location of the user and bring out the weather forcast for the user location at that particular time.
 
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com/css/css_grid.asp) - This helped me when i got stuck while using my grid-area
+- [Example resource 1]() - 
  
 ## Author
 
-- Website -(https://hebrohim.github.io/TestimonialPageGridCss/)
-- Frontend Mentor -(https://www.frontendmentor.io/profile/hebrohim)
+- Website -(https://github.com/hebrohim)
 
 ## Acknowledgments
-After teaching my student flexbox and grid system in css, i thought of a good project we could implement with grid system, I quickly designed this project and allow them work on it too. 
