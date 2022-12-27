@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/screenShot.png)
+![](./design/screenshot.jpg)
 
 ### Links
 
@@ -34,7 +34,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- CSS Grid
+- CSS flexBox
 - Mobile-first workflow
 ### What I learned
 

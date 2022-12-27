@@ -22,9 +22,14 @@ document.getElementById("displayCurrentTime").innerHTML = currentTime(new Date()
       .then((res) => res.json())
       .then((data)=>{
         console.log(data)
-        displayCityTemparature.innerHTML= Math.round(data.main.temp) +`&deg;C` 
+        // console.log(data.weather[0])
+        description.innerHTML = data.weather[0].main 
+
+        description.innerHTML = data.weather[0].description 
+
+        displayCityTemparature.innerHTML= Math.round(data.main.temp) +`&deg;C`
         displayCityName.innerHTML = `${data.name},${data.sys.country}`
-      
+        
       })
       .catch((err) =>displayCityName.innerHTML= `<p>Enter a valid city name</p>`);
      
